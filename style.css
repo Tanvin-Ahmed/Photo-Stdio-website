@@ -1,0 +1,754 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+.part{
+    text-align: center;
+    margin:0 auto;
+    padding-top: rem;
+}
+.header{
+    scroll-behavior: smooth;
+}
+.header .icon ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    pading-top: 1rem;
+    margin-bottom: -10px;
+}
+.header .icon ul li{
+    padding-top: 1rem;
+}
+.header .icon ul li a{
+    padding-right: 2rem;
+    color: white;
+}
+.header .icon ul li a i{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .icon ul li a:hover i{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.header .icon ul li a:hover .fa-instagram{
+    background: -webkit-linear-gradient(rgb(255, 26, 26), rgb(212, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .icon ul li a:hover .fa-facebook-f,
+.header .icon ul li a:hover .fa-twitter{
+    background: -webkit-linear-gradient(rgb(43, 57, 255),rgb(0, 102, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.header .icon ul li a:hover .fa-google-wallet{
+    background: -webkit-linear-gradient(rgb(41, 55, 255),rgb(255, 0, 0),yellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .icon{
+    animation: animate1 1s 1 0.5s;
+    -webkit-animation: animate1 1s 1 0.5s;
+}
+@keyframes animate1{
+    0%{
+        transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+}
+
+}
+.header nav .bt{
+    border: 2px solid white;
+    padding: 0.2rem 1rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.header nav .bt:hover,
+.header nav .bt:focus{
+    background-image: linear-gradient(to right, rgb(36, 36, 36), black, rgb(36, 36, 36));
+}
+.header nav .navbar-brand{
+    font-size: 40px;
+}
+.header nav button{
+    opacity: 0;
+}
+.header nav .nav-link{
+    text-transform: uppercase;
+}
+.header .navigation{
+    background-image: linear-gradient(to right,black, rgb(43, 43, 43),black);
+}
+.header nav{
+    animation: animate2 1s 1 0.5s ease-in-out;
+    -webkit-animation: animate2 1s 1 0.5s ease-in-out;
+}
+@keyframes animate2{
+    0%{
+        opacity: 0;
+    }
+} 
+/* end header section */
+
+/* start banner section */
+.banner{
+    scroll-behavior: smooth;
+    margin-top: 7rem;
+    background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(./img/header/maidstone-kent-photographic-studio-hire-1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.banner .header-title{
+    padding-top: 5rem;
+    animation: animate3 1s 1 0.5s;
+    -webkit-animation: animate3 1s 1 0.5s;
+}
+@keyframes animate3{
+    0%{
+        transform: translateY(-100rem);
+        -webkit-transform: translateY(-100rem);
+        -moz-transform: translateY(-100rem);
+        -ms-transform: translateY(-100rem);
+        -o-transform: translateY(-100rem);
+}
+}
+.banner .header-title p{
+    font-size: 20px;
+}
+
+.banner .header-title h1{
+    font-size: 60px;
+}
+.banner .header-title a{
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    color: white;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.banner .header-title a:hover,
+.banner .header-title a:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
+}
+/* end banner section */
+
+/* start masterpiece section */
+.part{
+    margin: auto;
+}
+.masterpiece{
+    scroll-behavior: smooth;
+    color: white;
+}
+.text-danger{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.masterpiece .card-img-overlay h2{
+    transform: translateY(130%);
+    -webkit-transform: translateY(130%);
+    -moz-transform: translateY(130%);
+    -ms-transform: translateY(130%);
+    -o-transform: translateY(130%);
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+}
+.masterpiece .card-img-overlay p,
+.masterpiece .card-img-overlay button{
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.masterpiece .card-img-overlay:hover h2{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+}
+.masterpiece .card-img-overlay:hover p,
+.masterpiece .card-img-overlay:hover button{
+    opacity: 1;
+}
+.masterpiece .card .card-img:hover .card-img-overlay{
+    transform: translate(0%,20%);
+    -webkit-transform: translate(0%,20%);
+    -moz-transform: translate(0%,20%);
+    -ms-transform: translate(0%,20%);
+    -o-transform: translate(0%,20%);
+}
+.masterpiece .card-img-overlay button a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+/* end masterpiece section */
+.masterclass{
+    scroll-behavior: smooth;
+    margin-top: 6rem;
+    background-color: rgb(221, 221, 221);
+}
+.masterclass .part img{
+    width: 700px;
+}
+.masterclass .part .text{
+    padding: 2rem;
+}
+.masterclass .part .text a{
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0.7rem 1.3rem;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.masterclass .part .text a:hover{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: 1px solid rgb(92, 57, 57);
+}
+/* end masterclass section */
+
+
+/* start products section */
+.products{
+    scroll-behavior: smooth;
+    margin-top: 6rem;
+    text-align: center;
+}
+.products .part{
+    text-align: center;
+    justify-content: center;
+}
+.products .part img{
+    width: 250px;
+    height: 200px;
+
+}
+.products .part .product6 .overlay{
+    position: absolute;
+    top: 0;
+    padding: 0.5rem;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: 600;
+}
+/* end products section */
+
+
+/* start wall section */
+.wall{
+    scroll-behavior: smooth;
+    margin-top: 6rem;
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(./img/wall/eric-welch-eRwWGWkh0vU-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 5rem;
+}
+.wall .card{
+    text-align: center;
+    height: 400px;
+}
+.wall .card .card-img{
+    height: 398px;
+}
+.wall .card .card-img-overlay img{
+    width: 50px;
+    height: 50px;
+}
+.wall .card .card-img-overlay a{
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* end wall section */
+
+/* start tabele */
+.signed{
+    scroll-behavior: smooth;
+    margin-top: 6rem;
+    text-align: center;
+}
+/* end tabele */
+
+/* start service section */
+.service{
+    scroll-behavior: smooth;
+    margin-top: 6rem;
+    background-color: rgb(230, 230, 230);
+    padding: 3rem;
+}
+.service .section p{
+    padding-right: 2rem;
+}
+.service .section .amount{
+    position: absolute;
+    left: 90%;
+}
+/* end service section */
+
+/* start team section */
+.team{
+    margin-top: 6rem;
+    scroll-behavior: smooth;
+}
+.team .card-1{
+    background-color: rgb(23, 139, 255);
+    color: white;
+}
+.team .card-2{
+    background-color: rgb(255, 65, 31);
+    color: white;
+}
+.team .card-3{
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+.team .card-4{
+    background-color: rgb(255, 136, 0);
+    color: white;
+}
+.team .card .card-img-overlay ul{
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.team .card:hover .card-img-overlay ul{
+    opacity: 1;
+}
+.team .card .card-img-overlay ul{
+    position: absolute;
+    display: flex;
+    top: 45%;
+    left: 13%;
+    transform: translate(0%,0%);
+    -webkit-transform: translate(0%,0%);
+    -moz-transform: translate(0%,0%);
+    -ms-transform: translate(0%,0%);
+    -o-transform: translate(0%,0%);
+    text-align: center;
+}
+.team .card .card-img-overlay ul li{
+    list-style: none;
+}
+.team .card .card-img-overlay ul .ft{
+    background-color: dodgerblue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding:0 0.3rem;
+}
+.team .card .card-img-overlay ul .insta,
+.team .card-4 .card-img-overlay ul .insta{
+    background-image: linear-gradient(to right, rgb(255, 0, 34),rgb(235, 10, 255));
+    padding: 0 0.3rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.team .card .card-img-overlay ul li a{
+    color: white;
+    display: flex;
+    padding: 0.5rem;
+}
+/* end team section */
+
+/* start create section */
+.create{
+    margin-top: 6rem;
+}
+.create h1{
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+.create .text{
+    color: rgb(110, 110, 110);
+}
+.create .card {
+    text-align: center;
+    height: 40vh;
+}
+.create .card-img{
+    height: 50vh;
+}
+.create .card .card-img-overlay h5{
+    position: absolute;
+    bottom: 0px;
+    padding-left: 4rem;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+.create .card .card-img-overlay{
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.create .card:hover .card-img-overlay{
+    opacity: 1;
+}
+/* end create section */
+/* start form section */
+.form-fillup{
+    margin-top: 10rem;
+    scroll-behavior: smooth;
+}
+.form-fillup form input{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.form-fillup form input:hover,
+.form-fillup form input:focus{
+    outline: none;
+}
+.form-fillup form textarea{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.form-fillup form button a{
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+.form-fillup form button{
+    padding: 0.6rem 2rem;
+}
+/* end form section */
+
+/* start follow section */
+.follow{
+    margin-top: 6rem;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    padding: 2rem;
+}
+.follow h1{
+    padding-bottom: 3rem;
+}
+.follow .icon a{
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgb(122, 122, 122);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    color: white;
+}
+
+.follow .icon .facebook:hover,
+.follow .icon .twitter:hover{
+    background-color: dodgerblue;
+}
+.follow .icon .wallet:hover{
+    background-image: linear-gradient(to right, blue, red, yellow, green);
+}
+.follow .icon .insta:hover{
+    background-image: linear-gradient(to right, rgb(255, 16, 56), rgb(174, 0, 255));
+}
+.follow .icon .plus:hover{
+    background-color: firebrick;
+}
+/* end follow section */
+/* start map */
+.map{
+    margin-top: 6rem;
+}
+.map .part{
+    text-align: center;
+    padding: 1rem;
+}
+/* end map */
+
+/* start footer */
+footer{
+    margin-top: 6rem;
+    padding: 2rem;
+    color: white;
+    background-color: black;
+}
+footer .contact a{
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5;
+}
+footer .icon ul{
+    display: flex;
+    justify-content: center;
+}
+footer .icon ul li{
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    font-size: 23px;
+}
+/* end footer */
+/* start responsive part of css */
+@media(max-width:1199px){
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 37%;
+        left: 10%;
+    }
+}
+@media(max-width:991px){
+    .products .part .product6 .overlay{
+        position: absolute;
+        left: 15%;
+    }
+    .masterclass .part img{
+        padding-top: 1rem;
+    }
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 22%;
+        left: -7.5%;
+    }
+}
+@media(max-width:767px){
+    .header nav .navbar-brand{
+        font-size: 40px;
+    }
+    .header nav .nav-link{
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .products .part .product6 .overlay{
+        position: absolute;
+        left: 26.5%;
+    }
+    .masterclass .part img{
+        width: 500px;
+        padding-top: 1rem;
+    }
+    .service .section .amount{
+        position: absolute;
+        left: 70%;
+    }
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 12%;
+        left: -29%;
+    }
+}
+@media(max-width:575px){
+    .header nav button{
+        opacity: 1;
+        background-color: rgba(255, 250, 250, 0.658);
+    }
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 70%;
+        left: 20%;
+    }
+    .team .card .card-img-overlay ul li{
+        margin: 1rem;
+    }
+}
+@media(max-width:550px){
+    .masterclass .part img{
+        width: 400px;
+    }
+}
+@media(max-width:525px){
+    .products .part .product6 .overlay{
+        position: absolute;
+        left: 25%;
+    }
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 60%;
+        left: 20%;
+    }
+}
+@media(max-width:511px){
+    .follow .icon a{
+        margin: 0;
+        padding: 0.5rem;
+    }
+}
+@media(max-width:464px){
+    .masterclass .part img{
+        width: 300px;
+    }
+    .products .part .product6 .overlay{
+        position: absolute;
+        left: 22.5%;
+    }
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 60%;
+        left: 15%;
+    }
+}
+@media(max-width:455px){
+    .map iframe{
+        width: 300px;
+    }
+}
+@media(max-width:424px){
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+}
+@media(max-width:401px){
+    .signed .container .tab{
+        overflow: auto;
+    }
+
+}
+@media(max-width:363px){
+    .map iframe{
+        width: 250px;
+    }
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 45%;
+        left: 5%;
+    }
+    .wall .card{
+        width: 230px;
+        margin-left: -36px;
+    }
+}
+@media(max-width:327px){
+    .masterclass .part img{
+        width: 250px;
+    }
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 45%;
+        left: 0%;
+    }
+    .wall .card{
+        width: 230px;
+        margin-left: -45px;
+    }
+    .map iframe{
+        width: 170px;
+    }
+}
+@media(max-width:318px){
+    .team .card .card-img-overlay ul{
+        position: absolute;
+        top: 35%;
+        left: -3%;
+    }
+}
+@media(max-width:313px){
+    .banner .header-title h1{
+        font-size: 40px;
+    }
+    .wall .card{
+        width: 230px;
+        margin-left: -53px;
+    }
+}
+@media(max-width:310px){
+    .masterclass .part img{
+        width: 200px;
+    }
+}
+@media(max-width:307px){
+    .wall .card{
+        width: 230px;
+        margin-left: -65px;
+    }
+}
+@media(max-width:277px){
+    .wall .card{
+        width: 230px;
+        margin-left: -72px;
+    }
+}
